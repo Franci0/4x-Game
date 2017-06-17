@@ -102,4 +102,14 @@ public class Hex
     {
         return HexWidth();
     }
+
+    public static float Distance(Hex a, Hex b)
+    {
+        return
+            Mathf.Max(
+                Mathf.Abs(a.q - b.q),
+                Mathf.Abs(a.r - b.r),
+                Mathf.Abs(a.s - b.s)
+            );
+    }
 }
